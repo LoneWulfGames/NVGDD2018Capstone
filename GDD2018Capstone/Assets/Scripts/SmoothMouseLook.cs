@@ -31,10 +31,10 @@ public class SmoothMouseLook : NetworkBehaviour
 
     void Update()
     {
-        if (!isLocalPlayer)
+        /*if (!isLocalPlayer)
         {
             return;
-        }
+        }*/
 
         if (axes == RotationAxes.MouseXAndY)
         {
