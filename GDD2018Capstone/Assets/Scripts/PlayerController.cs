@@ -6,13 +6,19 @@ using UnityEngine.Networking;
 public class PlayerController : NetworkBehaviour
 {
     public float speed = 0.2f;
+    public float camY;
+    public Camera cam;
 
-	void Update ()
+    void Update ()
     {
         if(!isLocalPlayer)
         {
             return;
         }
+
+        cam = FindObjectOfType<Camera>();
+
+        camY = cam.transform.rotation.y;
 
         /*float x = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
         float z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
@@ -39,6 +45,14 @@ public class PlayerController : NetworkBehaviour
         {
             transform.Translate(Vector3.back * speed);
         }
+
+        CameraFollow();
+
+    }
+
+    public void CameraFollow()
+    {
+        transform.rotation = Quaternion.Euler(0, camY, 0);
     }
 
     public override void OnStartLocalPlayer()
