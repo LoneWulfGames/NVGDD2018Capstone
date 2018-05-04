@@ -39,7 +39,6 @@ GameObject:
   - component: {fileID: 4506762960925330}
   - component: {fileID: 20116664635850026}
   - component: {fileID: 124174195166478102}
-  - component: {fileID: 114987031237198510}
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: Untagged
@@ -61,6 +60,8 @@ GameObject:
   - component: {fileID: 114410173065018102}
   - component: {fileID: 114486733663510924}
   - component: {fileID: 114703539908983886}
+  - component: {fileID: 114999260046774088}
+  - component: {fileID: 54665036675225028}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -229,6 +230,21 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1521623796162234}
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!54 &54665036675225028
+Rigidbody:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1521623796162234}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 1
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!65 &65587760146435598
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -306,25 +322,25 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
---- !u!114 &114987031237198510
+--- !u!114 &114999260046774088
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1496643031846226}
+  m_GameObject: {fileID: 1521623796162234}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: edf0e27877617f8468fad939d0f2355c, type: 3}
+  m_Script: {fileID: 11500000, guid: db39e5e20d095fb48a35927a795b94c1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  XSensitivity: 2
-  YSensitivity: 2
-  clampVerticalRotation: 1
-  MinimumX: -90
-  MaximumX: 90
-  smooth: 0
-  smoothTime: 5
-  lockCursor: 1
+  axes: 0
+  sensitivityX: 3
+  sensitivityY: 3
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
+  frameCounter: 20
 --- !u!124 &124174195166478102
 Behaviour:
   m_ObjectHideFlags: 1
