@@ -39,6 +39,10 @@ GameObject:
   - component: {fileID: 4506762960925330}
   - component: {fileID: 20116664635850026}
   - component: {fileID: 124174195166478102}
+<<<<<<< HEAD
+  - component: {fileID: 114309311315551652}
+=======
+>>>>>>> 55c4d105be1e859a58a323acd399343782f2da01
   m_Layer: 0
   m_Name: Player Camera
   m_TagString: Untagged
@@ -257,6 +261,25 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114309311315551652
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1496643031846226}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db39e5e20d095fb48a35927a795b94c1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  axes: 0
+  sensitivityX: 5
+  sensitivityY: 5
+  minimumX: -360
+  maximumX: 360
+  minimumY: -60
+  maximumY: 60
+  frameCounter: 20
 --- !u!114 &114410173065018102
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -300,7 +323,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b830bceca9dff6740925716c4c70fb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.2
+  speed: 2
 --- !u!114 &114703539908983886
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -322,6 +345,8 @@ MonoBehaviour:
   m_SnapThreshold: 5
   m_InterpolateRotation: 1
   m_InterpolateMovement: 1
+<<<<<<< HEAD
+=======
 --- !u!114 &114999260046774088
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -341,6 +366,7 @@ MonoBehaviour:
   minimumY: -60
   maximumY: 60
   frameCounter: 20
+>>>>>>> 55c4d105be1e859a58a323acd399343782f2da01
 --- !u!124 &124174195166478102
 Behaviour:
   m_ObjectHideFlags: 1
