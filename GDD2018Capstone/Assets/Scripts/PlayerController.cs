@@ -52,7 +52,7 @@ public class PlayerController : NetworkBehaviour
 
     public void CameraFollow()
     {
-        transform.rotation = Quaternion.Euler(0, camY, 0);
+        
     }
 
     public override void OnStartLocalPlayer()
