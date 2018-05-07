@@ -5,7 +5,8 @@ using UnityEngine;
 //created by Ariel
 //camera movement with mouse
 
-public class camMouseLook : MonoBehaviour {
+public class camMouseLook : MonoBehaviour
+{
 
     Vector2 mouseLook;
     Vector2 smoothV;
@@ -15,12 +16,14 @@ public class camMouseLook : MonoBehaviour {
     GameObject character;
 
 	// Use this for initialization
-	void Start () {
-        character = this.transform.parent.gameObject;
+	void Start ()
+    {
+        character = transform.parent.gameObject;
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
         var md = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
 
         md = Vector2.Scale(md, new Vector2(sensitivity * smoothing, sensitivity * smoothing));
