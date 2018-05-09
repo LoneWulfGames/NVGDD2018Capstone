@@ -32,18 +32,18 @@ public class PlayerController : NetworkBehaviour
             return;
         }
 
-        /*float translation = Input.GetAxis("Vertical") * speed;
+        float translation = Input.GetAxis("Vertical") * speed;
         float straffe = Input.GetAxis("Horizontal") * speed;
         translation *= Time.deltaTime;
         straffe *= Time.deltaTime;
 
-        transform.Translate(straffe, 0, translation);*/
+        transform.Translate(straffe, 0, translation);
 
-        float x = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
+        /*float x = Input.GetAxis("Horizontal") * Time.deltaTime * 150.0f;
         float z = Input.GetAxis("Vertical") * Time.deltaTime * 3.0f;
 
         transform.Rotate(0, x, 0);
-        transform.Translate(0, 0, z);
+        transform.Translate(0, 0, z);*/
 
         if (Input.GetKeyDown("escape"))
             Cursor.lockState = CursorLockMode.None;

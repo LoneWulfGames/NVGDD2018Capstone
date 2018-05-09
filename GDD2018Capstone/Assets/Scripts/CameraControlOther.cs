@@ -10,7 +10,7 @@ public class CameraControlOther : NetworkBehaviour
     public GameObject mob;
     public Vector3 offSetFromMob;
     public float tiltMin, tiltMax;
-    // Update is called once per frame
+
     void Update()
     {
         if (Cursor.lockState == CursorLockMode.None)
@@ -21,7 +21,7 @@ public class CameraControlOther : NetworkBehaviour
         smoothV.x = Mathf.Lerp(smoothV.x, md.x, 1f / smoothing);
         smoothV.y = Mathf.Lerp(smoothV.y, md.y, 1f / smoothing);
         mouseLook += smoothV;
-        mouseLook = new Vector2(mouseLook.x, Mathf.Clamp(mouseLook.y, -30, 30));
+        mouseLook = new Vector2(mouseLook.x, Mathf.Clamp(mouseLook.y, tiltMin, tiltMax));
 
         transform.localRotation = Quaternion.AngleAxis(-mouseLook.y, Vector3.right);
         if (mob != null)
