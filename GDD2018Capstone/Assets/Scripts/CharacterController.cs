@@ -12,6 +12,11 @@ public class CharacterController : NetworkBehaviour
 
     public float speed = 10.0f;
 
+    public CharacterController player;
+
+    public Camera cam;
+    public CameraControlOther camControl;
+
 	// Use this for initialization
 
 	void Start ()
@@ -41,5 +46,14 @@ public class CharacterController : NetworkBehaviour
     public override void OnStartLocalPlayer()
     {
         GetComponent<MeshRenderer>().material.color = Color.yellow;
+
+        //prevent cursor usage
+        Cursor.lockState = CursorLockMode.Locked;
+        //setup character controller
+        player = GetComponent<CharacterController>();
+        cam = Camera.main;
+        camControl = cam.GetComponent<CameraControlOther>();
+        camControl.mob = this.gameObject;
+        camControl.ResetCam();
     }
 }
