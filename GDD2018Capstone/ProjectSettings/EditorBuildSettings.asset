@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Network Lobby.unity
+    guid: edf6de2096af7944180e05df5ec7e50a
+  - enabled: 1
     path: Assets/Scenes/Zach.unity
     guid: f8ec38de7241b6d4eb449eab0e255d7f
   - enabled: 1

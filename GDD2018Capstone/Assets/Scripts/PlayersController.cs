@@ -7,7 +7,7 @@ using UnityEngine.Networking;
 //deals with player movement
 //directly associated with camMouseLook script
 
-public class PlayerController : NetworkBehaviour
+public class PlayersController : NetworkBehaviour
 {
 
     public float speed = 10.0f;
