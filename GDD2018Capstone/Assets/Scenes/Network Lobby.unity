@@ -315,20 +315,21 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_MaxPlayers
-      value: 4
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_MaxPlayersPerConnection
-      value: 1
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_MinPlayers
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_LobbyPlayerPrefab
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 11487034, guid: ad727d7e1462ecc4f83c898ecc501997,
+        type: 2}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_PlayScene
       value: Zach
@@ -340,43 +341,48 @@ Prefab:
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: topPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 228625682}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: mainMenuPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 228625681}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: lobbyPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 228625680}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: infoPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 228625679}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: countdownPanel
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 228625678}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: addPlayerButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 228625677}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: backButton
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 228625676}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: statusInfo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 228625675}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: hostInfo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 228625674}
     - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
       propertyPath: m_LobbyScene
       value: Network Lobby
       objectReference: {fileID: 0}
+    - target: {fileID: 11475086, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
+      propertyPath: m_GamePlayerPrefab
+      value: 
+      objectReference: {fileID: 1381211233569230, guid: 37b2d4cdfd0e7354e83637e207a3576b,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
   m_IsPrefabParent: 0
@@ -385,6 +391,56 @@ RectTransform:
   m_PrefabParentObject: {fileID: 22459552, guid: c0978251ff7b10d4fb954a4b56acd9f0,
     type: 2}
   m_PrefabInternal: {fileID: 228625672}
+--- !u!114 &228625674 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11403930, guid: c0978251ff7b10d4fb954a4b56acd9f0,
+    type: 2}
+  m_PrefabInternal: {fileID: 228625672}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &228625675 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11415712, guid: c0978251ff7b10d4fb954a4b56acd9f0,
+    type: 2}
+  m_PrefabInternal: {fileID: 228625672}
+  m_Script: {fileID: 708705254, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!114 &228625676 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11477488, guid: c0978251ff7b10d4fb954a4b56acd9f0,
+    type: 2}
+  m_PrefabInternal: {fileID: 228625672}
+  m_Script: {fileID: 1392445389, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+--- !u!1 &228625677 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 161020, guid: c0978251ff7b10d4fb954a4b56acd9f0, type: 2}
+  m_PrefabInternal: {fileID: 228625672}
+--- !u!114 &228625678 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11413810, guid: c0978251ff7b10d4fb954a4b56acd9f0,
+    type: 2}
+  m_PrefabInternal: {fileID: 228625672}
+  m_Script: {fileID: 11500000, guid: ccb58ed657934fa4dacaa6afdf48bffc, type: 3}
+--- !u!114 &228625679 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11442006, guid: c0978251ff7b10d4fb954a4b56acd9f0,
+    type: 2}
+  m_PrefabInternal: {fileID: 228625672}
+  m_Script: {fileID: 11500000, guid: 1d17c9f1a79cf43479d9ac49a7e77a12, type: 3}
+--- !u!224 &228625680 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22443498, guid: c0978251ff7b10d4fb954a4b56acd9f0,
+    type: 2}
+  m_PrefabInternal: {fileID: 228625672}
+--- !u!224 &228625681 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 22442386, guid: c0978251ff7b10d4fb954a4b56acd9f0,
+    type: 2}
+  m_PrefabInternal: {fileID: 228625672}
+--- !u!114 &228625682 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 11424994, guid: c0978251ff7b10d4fb954a4b56acd9f0,
+    type: 2}
+  m_PrefabInternal: {fileID: 228625672}
+  m_Script: {fileID: 11500000, guid: 763992d85d3f6d4428454c2a968ce084, type: 3}
 --- !u!1 &634301911
 GameObject:
   m_ObjectHideFlags: 0
