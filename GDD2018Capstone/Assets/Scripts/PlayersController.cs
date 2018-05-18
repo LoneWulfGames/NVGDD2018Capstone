@@ -10,9 +10,11 @@ using UnityEngine.Networking;
 public class PlayersController : NetworkBehaviour
 {
 
-    public float speed = 10.0f;
+    public float speed;
 
-    public CharacterController player;
+    public bool isSprinting;
+
+    public bool cursorLocked;
 
     public Camera cam;
     public CameraControlOther camControl;
@@ -32,6 +34,9 @@ public class PlayersController : NetworkBehaviour
             return;
         }
 
+        if (isSprinting == false)
+            speed = 8.0f;
+
         float translation = Input.GetAxis("Vertical") * speed;
         float straffe = Input.GetAxis("Horizontal") * speed;
         translation *= Time.deltaTime;
@@ -45,8 +50,26 @@ public class PlayersController : NetworkBehaviour
         transform.Rotate(0, x, 0);
         transform.Translate(0, 0, z);*/
 
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            speed = 10f;
+            isSprinting = true;
+        }
+
+        if (!Input.GetKey(KeyCode.LeftShift))
+            isSprinting = false;
+
+        if (Input.GetKeyDown("escape") && (cursorLocked == true))
+        {
             Cursor.lockState = CursorLockMode.None;
+            cursorLocked = false;
+        }
+
+        if (Input.GetKeyDown("escape") && (cursorLocked == false))
+        {
+            Cursor.lockState = CursorLockMode.Locked;
+            cursorLocked = true;
+        }
     }
 
     public override void OnStartLocalPlayer()
@@ -56,7 +79,6 @@ public class PlayersController : NetworkBehaviour
         //prevent cursor usage
         Cursor.lockState = CursorLockMode.Locked;
         //setup character controller
-        player = GetComponent<CharacterController>();
         cam = Camera.main;
         camControl = cam.GetComponent<CameraControlOther>();
         camControl.mob = this.gameObject;
