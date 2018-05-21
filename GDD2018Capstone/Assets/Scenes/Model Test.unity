@@ -114,10 +114,7 @@ NavMeshSettings:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> parent of 447114f... Merge branch 'master' of https://github.com/LoneWulfGames/NVGDD2018Capstone
 --- !u!1001 &476062564
 Prefab:
   m_ObjectHideFlags: 0
@@ -542,10 +539,7 @@ Camera:
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
 <<<<<<< HEAD
-<<<<<<< HEAD
 =======
-=======
->>>>>>> parent of 447114f... Merge branch 'master' of https://github.com/LoneWulfGames/NVGDD2018Capstone
 --- !u!1001 &1989866527
 Prefab:
   m_ObjectHideFlags: 0
@@ -638,9 +632,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4c60c354d46100e489b75d6e61423849, type: 3}
   m_IsPrefabParent: 0
-<<<<<<< HEAD
->>>>>>> parent of 447114f... Merge branch 'master' of https://github.com/LoneWulfGames/NVGDD2018Capstone
-=======
 >>>>>>> parent of 447114f... Merge branch 'master' of https://github.com/LoneWulfGames/NVGDD2018Capstone
 --- !u!1001 &2138152018
 Prefab:
@@ -656,11 +647,7 @@ Prefab:
     - target: {fileID: 4634937272653628, guid: ce88b5a07adeb8d46a7736aa8e78a3f9, type: 2}
       propertyPath: m_LocalPosition.y
 <<<<<<< HEAD
-<<<<<<< HEAD
       value: 0
-=======
-      value: 2.358
->>>>>>> parent of 447114f... Merge branch 'master' of https://github.com/LoneWulfGames/NVGDD2018Capstone
 =======
       value: 2.358
 >>>>>>> parent of 447114f... Merge branch 'master' of https://github.com/LoneWulfGames/NVGDD2018Capstone
@@ -688,7 +675,6 @@ Prefab:
     - target: {fileID: 4634937272653628, guid: ce88b5a07adeb8d46a7736aa8e78a3f9, type: 2}
       propertyPath: m_RootOrder
 <<<<<<< HEAD
-<<<<<<< HEAD
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4634937272653628, guid: ce88b5a07adeb8d46a7736aa8e78a3f9, type: 2}
@@ -699,9 +685,6 @@ Prefab:
         type: 2}
       propertyPath: m_Range
       value: 20
-=======
-      value: 4
->>>>>>> parent of 447114f... Merge branch 'master' of https://github.com/LoneWulfGames/NVGDD2018Capstone
 =======
       value: 4
 >>>>>>> parent of 447114f... Merge branch 'master' of https://github.com/LoneWulfGames/NVGDD2018Capstone
