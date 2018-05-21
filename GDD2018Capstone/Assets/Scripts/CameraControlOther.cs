@@ -14,7 +14,10 @@ public class CameraControlOther : NetworkBehaviour
     void Update()
     {
         if (Cursor.lockState == CursorLockMode.None)
-        { return; }
+        {
+            return;
+        }
+
         //get mouse direction
         var md = new Vector2(Input.GetAxisRaw("Mouse X"), Input.GetAxisRaw("Mouse Y"));
         //smooth mouse direction
