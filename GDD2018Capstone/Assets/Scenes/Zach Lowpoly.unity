@@ -39,10 +39,14 @@ RenderSettings:
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
 <<<<<<< HEAD
+  m_IndirectSpecularColor: {r: 0.44657844, g: 0.49641222, b: 0.57481694, a: 1}
+=======
+<<<<<<< HEAD
   m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
 =======
   m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 >>>>>>> 1fd59a891df80f995845523584e1bdc1602bfe4f
+>>>>>>> 00ea7989063b751a110bc53a9e37cc6c0b7849d4
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -996,75 +1000,18 @@ Transform:
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!1001 &635038730
 =======
+>>>>>>> 00ea7989063b751a110bc53a9e37cc6c0b7849d4
 --- !u!1001 &661699956
->>>>>>> cae3fe098dacaca0dff597f764cea622d7bbbee6
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-<<<<<<< HEAD
-    m_TransformParent: {fileID: 1334941141}
-    m_Modifications:
-    - target: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 373.62
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 5.8947
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 356.64
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_LocalRotation.x
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_RootOrder
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 100002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_Name
-      value: Rose 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.23869936
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.28698194
-      objectReference: {fileID: 0}
-    - target: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.21700014
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-  m_IsPrefabParent: 0
---- !u!4 &635038731 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 400002, guid: 0277cfc546e0ba44cbe01e41b145609b, type: 3}
-  m_PrefabInternal: {fileID: 635038730}
-=======
     m_TransformParent: {fileID: 324671286}
     m_Modifications:
     - target: {fileID: 400000, guid: 567a9be2e5b908b45ad7e3f7492dac3d, type: 3}
@@ -1126,9 +1073,12 @@ Transform:
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 567a9be2e5b908b45ad7e3f7492dac3d, type: 3}
   m_PrefabInternal: {fileID: 661699956}
+<<<<<<< HEAD
+=======
 >>>>>>> cae3fe098dacaca0dff597f764cea622d7bbbee6
 =======
 >>>>>>> parent of 4e96a4b... Fencing added.
+>>>>>>> 7007385e7c6b0172befc8dce43a0e3356b6042a6
 --- !u!1001 &705239984
 Prefab:
   m_ObjectHideFlags: 0
@@ -1254,6 +1204,10 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 67e172afda5627c4c80261c4ce5caff0, type: 3}
   m_PrefabInternal: {fileID: 838404385}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+=======
+>>>>>>> 7007385e7c6b0172befc8dce43a0e3356b6042a6
 <<<<<<< HEAD
 --- !u!1001 &964898546
 =======
@@ -1387,8 +1341,8 @@ Transform:
 --- !u!1001 &1374321266
 =======
 >>>>>>> 1fd59a891df80f995845523584e1bdc1602bfe4f
+>>>>>>> 00ea7989063b751a110bc53a9e37cc6c0b7849d4
 --- !u!1001 &1002416326
->>>>>>> cae3fe098dacaca0dff597f764cea622d7bbbee6
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
