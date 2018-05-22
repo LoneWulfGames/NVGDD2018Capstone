@@ -201,7 +201,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  player: {fileID: 0}
+  walkingSpeed: 3
+  sprintingSpeed: 0
+  isSprinting: 0
+  cursorLocked: 0
+  isSeeker: 0
+  lobby: {fileID: 0}
   cam: {fileID: 0}
   camControl: {fileID: 0}
 --- !u!114 &114111168745993900
