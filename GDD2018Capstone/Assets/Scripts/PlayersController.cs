@@ -11,11 +11,17 @@ public class PlayersController : NetworkBehaviour
 {
 
     public float speed;
+    public float walkingSpeed;
 
+    [SerializeField]
+    private float sprintingSpeed;
+
+    public bool isJumping = false;
     public bool isSprinting;
-
     public bool cursorLocked;
+    public bool isSeeker = false;
 
+    public Prototype.NetworkLobby.LobbyPlayer lobby;
     public Camera cam;
     public CameraControlOther camControl;
 
@@ -24,6 +30,8 @@ public class PlayersController : NetworkBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked; //game cursor cannot be seen in game
+
+        sprintingSpeed = walkingSpeed * 1.5f;
     }
 
     // Update is called once per frame
@@ -35,7 +43,9 @@ public class PlayersController : NetworkBehaviour
         }
 
         if (isSprinting == false)
-            speed = 8.0f;
+        {
+            speed = walkingSpeed;
+        }
 
         float translation = Input.GetAxis("Vertical") * speed;
         float straffe = Input.GetAxis("Horizontal") * speed;
@@ -52,30 +62,28 @@ public class PlayersController : NetworkBehaviour
 
         if (Input.GetKey(KeyCode.LeftShift))
         {
-            speed = 10f;
+            speed = sprintingSpeed;
             isSprinting = true;
         }
 
         if (!Input.GetKey(KeyCode.LeftShift))
-            isSprinting = false;
-
-        if (Input.GetKeyDown("escape") && (cursorLocked == true))
         {
-            Cursor.lockState = CursorLockMode.None;
-            cursorLocked = false;
+            isSprinting = false;
         }
 
-        if (Input.GetKeyDown("escape") && (cursorLocked == false))
+        if (Input.GetKeyDown("escape") && (Cursor.lockState == CursorLockMode.Locked))
+        {
+            Cursor.lockState = CursorLockMode.None;
+        }
+
+        else if (Input.GetKeyDown("escape") && (Cursor.lockState == CursorLockMode.None))
         {
             Cursor.lockState = CursorLockMode.Locked;
-            cursorLocked = true;
         }
     }
 
     public override void OnStartLocalPlayer()
     {
-        GetComponent<MeshRenderer>().material.color = Color.yellow;
-
         //prevent cursor usage
         Cursor.lockState = CursorLockMode.Locked;
         //setup character controller
@@ -83,5 +91,6 @@ public class PlayersController : NetworkBehaviour
         camControl = cam.GetComponent<CameraControlOther>();
         camControl.mob = this.gameObject;
         camControl.ResetCam();
+        print("Player ID is " + Network.player.ToString());
     }
 }
