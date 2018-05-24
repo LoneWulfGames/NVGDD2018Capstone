@@ -111,6 +111,5 @@ public class PlayersController : NetworkBehaviour
         camControl = cam.GetComponent<CameraControlOther>();
         camControl.mob = this.gameObject;
         camControl.ResetCam();
-        print("Player ID is " + Network.player.ToString());
     }
 }
