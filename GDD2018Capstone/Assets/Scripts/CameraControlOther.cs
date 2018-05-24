@@ -1,6 +1,5 @@
 ﻿using UnityEngine;
-using UnityEngine.Networking;
-public class CameraControlOther : NetworkBehaviour
+public class CameraControlOther : MonoBehaviour
 {
     public Vector2 mouseLook;
     private Vector2 smoothV;
