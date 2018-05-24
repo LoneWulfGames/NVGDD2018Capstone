@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - Player Camera
+  - Blindfold
   layers:
   - Default
   - TransparentFX
