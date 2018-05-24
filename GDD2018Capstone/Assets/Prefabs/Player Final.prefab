@@ -156,7 +156,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1942900842947316
 GameObject:
   m_ObjectHideFlags: 1
@@ -832,7 +832,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8dfa61b572b328749ba65e54bc107d1e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  blindfold: {fileID: 0}
+  blindfold: {fileID: 1917298762395442}
   seekerStartDelay: 5
 --- !u!136 &136759499189922694
 CapsuleCollider:
