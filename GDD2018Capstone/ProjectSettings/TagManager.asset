@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Player Camera
+  - Model
+  - Prop
   layers:
   - Default
   - TransparentFX
