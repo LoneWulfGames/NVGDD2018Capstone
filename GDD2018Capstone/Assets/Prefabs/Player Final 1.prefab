@@ -63,8 +63,9 @@ GameObject:
   - component: {fileID: 114002176352923058}
   - component: {fileID: 114870480630537312}
   - component: {fileID: 114111168745993900}
+  - component: {fileID: 114949868847522848}
   m_Layer: 0
-  m_Name: Player Final
+  m_Name: Player Final 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -803,22 +804,22 @@ MonoBehaviour:
   m_SceneId:
     m_Value: 0
   m_AssetId:
-    i0: 55
-    i1: 178
-    i2: 212
-    i3: 205
-    i4: 253
-    i5: 14
-    i6: 115
-    i7: 84
-    i8: 232
-    i9: 54
-    i10: 55
-    i11: 226
-    i12: 7
-    i13: 163
-    i14: 87
-    i15: 107
+    i0: 213
+    i1: 37
+    i2: 62
+    i3: 41
+    i4: 191
+    i5: 99
+    i6: 205
+    i7: 68
+    i8: 152
+    i9: 95
+    i10: 48
+    i11: 49
+    i12: 227
+    i13: 192
+    i14: 66
+    i15: 177
   m_ServerOnly: 0
   m_LocalPlayerAuthority: 1
 --- !u!114 &114870480630537312
@@ -834,6 +835,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blindfold: {fileID: 1917298762395442}
   seekerStartDelay: 5
+--- !u!114 &114949868847522848
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1381211233569230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f7c2c14c2b58a3f47af1fa484bd39676, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 1381211233569230}
+  clonePlayer: {fileID: 0}
 --- !u!136 &136759499189922694
 CapsuleCollider:
   m_ObjectHideFlags: 1
