@@ -3,9 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Networking;
 
-//created by Ariel
-//deals with player movement
-//directly associated with camMouseLook script
 
 public class PlayersController : NetworkBehaviour
 {

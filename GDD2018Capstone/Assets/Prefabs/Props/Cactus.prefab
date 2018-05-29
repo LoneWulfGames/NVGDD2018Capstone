@@ -18,14 +18,38 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 4693292866114968}
   - component: {fileID: 33965551991316610}
   - component: {fileID: 23101113999603294}
   - component: {fileID: 54855330711580270}
   - component: {fileID: 65294890550825430}
+=======
+  - component: {fileID: 4021739830834848}
+  - component: {fileID: 33111629314756932}
+  - component: {fileID: 23824233350854920}
+  - component: {fileID: 54141934275346752}
+  - component: {fileID: 65720851019363950}
+  - component: {fileID: 114397467818309944}
+  m_Layer: 0
+  m_Name: default
+  m_TagString: Prop
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1624115365290446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4042144630108018}
+>>>>>>> 26102181ded00f93a0f7811f34db18b121be8415
   m_Layer: 0
   m_Name: Cactus
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,3 +136,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10, y: 29, z: 10}
   m_Center: {x: 0, y: 14.5, z: 0}
+--- !u!114 &114397467818309944
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1125588118593832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b38672bfa32d24418292c62105cf6e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propModel: {fileID: 1125588118593832}

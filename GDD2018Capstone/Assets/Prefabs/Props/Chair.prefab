@@ -18,14 +18,38 @@ GameObject:
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
   - component: {fileID: 4552643283240080}
   - component: {fileID: 33990387525416294}
   - component: {fileID: 23728912881637952}
   - component: {fileID: 54335804613241816}
   - component: {fileID: 65961359233275058}
+=======
+  - component: {fileID: 4540004918066296}
+  - component: {fileID: 33315059473468036}
+  - component: {fileID: 23532145764282576}
+  - component: {fileID: 54447916333001418}
+  - component: {fileID: 65959074141696282}
+  m_Layer: 0
+  m_Name: default
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1803251379372668
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4175937125832568}
+  - component: {fileID: 114319461336761614}
+>>>>>>> 26102181ded00f93a0f7811f34db18b121be8415
   m_Layer: 0
   m_Name: Chair
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -112,3 +136,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 11, y: 18, z: 11}
   m_Center: {x: 0, y: 9, z: 0}
+--- !u!114 &114319461336761614
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1803251379372668}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b38672bfa32d24418292c62105cf6e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propModel: {fileID: 1803251379372668}
