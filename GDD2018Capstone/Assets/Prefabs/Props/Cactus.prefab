@@ -9,15 +9,22 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1624115365290446}
+  m_RootGameObject: {fileID: 1412692617913080}
   m_IsPrefabParent: 1
---- !u!1 &1125588118593832
+--- !u!1 &1412692617913080
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
+  - component: {fileID: 4693292866114968}
+  - component: {fileID: 33965551991316610}
+  - component: {fileID: 23101113999603294}
+  - component: {fileID: 54855330711580270}
+  - component: {fileID: 65294890550825430}
+=======
   - component: {fileID: 4021739830834848}
   - component: {fileID: 33111629314756932}
   - component: {fileID: 23824233350854920}
@@ -39,6 +46,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4042144630108018}
+>>>>>>> 26102181ded00f93a0f7811f34db18b121be8415
   m_Layer: 0
   m_Name: Cactus
   m_TagString: Prop
@@ -46,39 +54,25 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4021739830834848
+--- !u!4 &4693292866114968
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1125588118593832}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4042144630108018}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4042144630108018
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1624115365290446}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 1412692617913080}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -90.130684, y: 8.145211, z: -55.97637}
   m_LocalScale: {x: 0.1, y: 0.1, z: 0.1}
-  m_Children:
-  - {fileID: 4021739830834848}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23824233350854920
+--- !u!23 &23101113999603294
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1125588118593832}
+  m_GameObject: {fileID: 1412692617913080}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -108,19 +102,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33111629314756932
+--- !u!33 &33965551991316610
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1125588118593832}
+  m_GameObject: {fileID: 1412692617913080}
   m_Mesh: {fileID: 4300000, guid: 6ef88c2663730d04b99745bec8da78cb, type: 3}
---- !u!54 &54141934275346752
+--- !u!54 &54855330711580270
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1125588118593832}
+  m_GameObject: {fileID: 1412692617913080}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -130,12 +124,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!65 &65720851019363950
+--- !u!65 &65294890550825430
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1125588118593832}
+  m_GameObject: {fileID: 1412692617913080}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
