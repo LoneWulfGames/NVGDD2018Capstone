@@ -23,9 +23,10 @@ GameObject:
   - component: {fileID: 23115438215045042}
   - component: {fileID: 136737190978414914}
   - component: {fileID: 54078512923927258}
+  - component: {fileID: 114899239279083866}
   m_Layer: 0
   m_Name: Green Umbrella
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -100,6 +101,18 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!114 &114899239279083866
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1364654439944496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b38672bfa32d24418292c62105cf6e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propModel: {fileID: 1364654439944496}
 --- !u!136 &136737190978414914
 CapsuleCollider:
   m_ObjectHideFlags: 1

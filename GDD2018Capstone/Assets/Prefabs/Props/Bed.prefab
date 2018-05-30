@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33127805665147856}
   - component: {fileID: 23459696091121284}
   - component: {fileID: 65361471768680352}
+  - component: {fileID: 114264185310212740}
   m_Layer: 0
   m_Name: Bed
-  m_TagString: Untagged
+  m_TagString: Prop
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,3 +97,15 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 19.226837, y: 6.722908, z: 39.710293}
   m_Center: {x: -0.00062942505, y: 3.5148048, z: -0.68297386}
+--- !u!114 &114264185310212740
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1937314523725696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b38672bfa32d24418292c62105cf6e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  propModel: {fileID: 1937314523725696}
