@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+
 public class CameraControlOther : MonoBehaviour
 {
     public Vector2 mouseLook;
@@ -29,6 +30,7 @@ public class CameraControlOther : MonoBehaviour
         if (mob != null)
             mob.transform.localRotation = Quaternion.AngleAxis(mouseLook.x, mob.transform.up);
     }
+
     public void ResetCam()
     {
         //print("setting camera up!");    

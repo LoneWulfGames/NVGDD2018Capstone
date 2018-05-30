@@ -42,6 +42,7 @@ GameObject:
   - component: {fileID: 92878828087182990}
   - component: {fileID: 124139862276383172}
   - component: {fileID: 81042936725665972}
+  - component: {fileID: 114995653843167340}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -259,7 +260,7 @@ MonoBehaviour:
     i14: 67
     i15: 210
   m_ServerOnly: 0
-  m_LocalPlayerAuthority: 0
+  m_LocalPlayerAuthority: 1
 --- !u!114 &114946521070359650
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -271,16 +272,34 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b830bceca9dff6740925716c4c70fb02, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0
-  walkingSpeed: 0
+  speed: 6
+  walkingSpeed: 6
+  jumpPower: 5
   sprintingSpeed: 0
-  isJumping: 0
   isSprinting: 0
   cursorLocked: 0
   isSeeker: 0
-  lobby: {fileID: 0}
+  rb: {fileID: 0}
   cam: {fileID: 0}
   camControl: {fileID: 0}
+--- !u!114 &114995653843167340
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1167412855810350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fc5502050d60a194eaf738aa7f4ec1ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mouseLook: {x: 0, y: 0}
+  sensitivity: 5
+  smoothing: 2
+  mob: {fileID: 1503878173651228}
+  offSetFromMob: {x: -4, y: 1, z: 0}
+  tiltMin: -75
+  tiltMax: 60
 --- !u!124 &124139862276383172
 Behaviour:
   m_ObjectHideFlags: 1

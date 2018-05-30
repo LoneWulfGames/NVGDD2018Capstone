@@ -9,28 +9,30 @@ public class PlayersController : NetworkBehaviour
 
     public float speed;
     public float walkingSpeed;
-    public float jumpPower;
+    public float jumpForce = 2.0f;
 
     [SerializeField]
     private float sprintingSpeed;
 
-    //public bool isGrounded;
     public bool isSprinting;
     public bool cursorLocked;
     public bool isSeeker = false;
-    //public bool canJump;
+    public bool isGrounded;
 
+    public Vector3 jump;
     public Rigidbody rb;
     public Camera cam;
     public CameraControlOther camControl;
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponentInChildren<Rigidbody>();
 
         Cursor.lockState = CursorLockMode.Locked; //game cursor cannot be seen in game
 
         sprintingSpeed = walkingSpeed * 1.5f;
+
+        jump = new Vector3(0.0f, 2.0f, 0.0f);
     }
 
     void Update()
@@ -40,16 +42,14 @@ public class PlayersController : NetworkBehaviour
             return;
         }
 
-        /*if (!isGrounded && rb.velocity.y == 0)
+        #region Jumping
+        if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
-            isGrounded = true;
-        }
 
-        if (Input.GetKeyDown(KeyCode.Space) && isGrounded == true)
-        {
-            rb.AddForce(transform.up * jumpPower);
+            rb.AddForce(jump * jumpForce, ForceMode.Impulse);
             isGrounded = false;
-        }*/
+        }
+        #endregion
 
         #region Movement
         float translation = Input.GetAxis("Vertical") * speed;
