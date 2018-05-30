@@ -9,75 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1957715945961622}
+  m_RootGameObject: {fileID: 1213879126666604}
   m_IsPrefabParent: 1
---- !u!1 &1654616796690024
+--- !u!1 &1213879126666604
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4147661355853574}
-  - component: {fileID: 33283707867234818}
-  - component: {fileID: 23079629407289050}
-  - component: {fileID: 64962638003223402}
+  - component: {fileID: 4028108746708496}
+  - component: {fileID: 33367861051838660}
+  - component: {fileID: 23946649985591462}
+  - component: {fileID: 64002184760780144}
+  - component: {fileID: 54995176451308498}
   m_Layer: 0
-  m_Name: default
+  m_Name: Blue Beach Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1957715945961622
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4589151475691302}
-  - component: {fileID: 54195286751316398}
-  m_Layer: 0
-  m_Name: Beach Chair Green
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4147661355853574
+--- !u!4 &4028108746708496
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1654616796690024}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4589151475691302}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4589151475691302
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1957715945961622}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -26.239569, y: 39.03035, z: -65.3245}
+  m_GameObject: {fileID: 1213879126666604}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -19.33, y: 39.03035, z: -68.69}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_Children:
-  - {fileID: 4147661355853574}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23079629407289050
+--- !u!23 &23946649985591462
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1654616796690024}
+  m_GameObject: {fileID: 1213879126666604}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -87,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: d801671e5b5654c4e842472df636d8c2, type: 2}
+  - {fileID: 2100000, guid: d9e772453187bdd4ca6039596e1f7c67, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,19 +78,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33283707867234818
+--- !u!33 &33367861051838660
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1654616796690024}
-  m_Mesh: {fileID: 4300000, guid: 70142fba264f26a469067554da71c9c4, type: 3}
---- !u!54 &54195286751316398
+  m_GameObject: {fileID: 1213879126666604}
+  m_Mesh: {fileID: 4300000, guid: e183f9377afe387479ad2915951684e5, type: 3}
+--- !u!54 &54995176451308498
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1957715945961622}
+  m_GameObject: {fileID: 1213879126666604}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -129,12 +100,12 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64962638003223402
+--- !u!64 &64002184760780144
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1654616796690024}
+  m_GameObject: {fileID: 1213879126666604}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -142,4 +113,4 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: 70142fba264f26a469067554da71c9c4, type: 3}
+  m_Mesh: {fileID: 4300000, guid: e183f9377afe387479ad2915951684e5, type: 3}

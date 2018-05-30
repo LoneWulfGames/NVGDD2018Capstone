@@ -9,75 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1116447232660016}
+  m_RootGameObject: {fileID: 1136599653051890}
   m_IsPrefabParent: 1
---- !u!1 &1116447232660016
+--- !u!1 &1136599653051890
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4440403405187426}
-  - component: {fileID: 54565807383599248}
+  - component: {fileID: 4307240447988514}
+  - component: {fileID: 33224638709824142}
+  - component: {fileID: 23041512569145196}
+  - component: {fileID: 64515967516567996}
+  - component: {fileID: 54180184374907178}
   m_Layer: 0
-  m_Name: Umbrella Blue
+  m_Name: Red Beach Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1 &1143818234088718
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 4938845313144374}
-  - component: {fileID: 33416283153868804}
-  - component: {fileID: 23247624412650330}
-  - component: {fileID: 136806031852368510}
-  m_Layer: 0
-  m_Name: default
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &4440403405187426
+--- !u!4 &4307240447988514
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1116447232660016}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -15.283106, y: 39.03035, z: -57.074158}
+  m_GameObject: {fileID: 1136599653051890}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -22.82, y: 39.03035, z: -61.99415}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
-  m_Children:
-  - {fileID: 4938845313144374}
+  m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!4 &4938845313144374
-Transform:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1143818234088718}
-  m_LocalRotation: {x: 0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 4440403405187426}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23247624412650330
+--- !u!23 &23041512569145196
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1143818234088718}
+  m_GameObject: {fileID: 1136599653051890}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -87,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: ded9d72fde14cf5449ff1a0fed2d8ac4, type: 2}
+  - {fileID: 2100000, guid: a95e9b9162b686941b7e72bc66be499a, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -107,19 +78,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33416283153868804
+--- !u!33 &33224638709824142
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1143818234088718}
-  m_Mesh: {fileID: 4300000, guid: 9bb5f184616beb54090a3d6e5b3f2362, type: 3}
---- !u!54 &54565807383599248
+  m_GameObject: {fileID: 1136599653051890}
+  m_Mesh: {fileID: 4300000, guid: 5be4a6962648c234592daecb61607d0f, type: 3}
+--- !u!54 &54180184374907178
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1116447232660016}
+  m_GameObject: {fileID: 1136599653051890}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -129,16 +100,17 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
---- !u!136 &136806031852368510
-CapsuleCollider:
+--- !u!64 &64515967516567996
+MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1143818234088718}
+  m_GameObject: {fileID: 1136599653051890}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.7
-  m_Height: 35
-  m_Direction: 1
-  m_Center: {x: -0.1, y: 17.5, z: -0.02}
+  serializedVersion: 3
+  m_Convex: 1
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 5be4a6962648c234592daecb61607d0f, type: 3}

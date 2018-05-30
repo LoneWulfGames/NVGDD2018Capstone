@@ -9,46 +9,46 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1248101033579242}
+  m_RootGameObject: {fileID: 1928368657919078}
   m_IsPrefabParent: 1
---- !u!1 &1248101033579242
+--- !u!1 &1928368657919078
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4456708249728174}
-  - component: {fileID: 33550012325890534}
-  - component: {fileID: 23641414126360558}
-  - component: {fileID: 64988981605872996}
-  - component: {fileID: 54465701477942784}
+  - component: {fileID: 4467178927100476}
+  - component: {fileID: 33315495075764820}
+  - component: {fileID: 23982836241454916}
+  - component: {fileID: 64501787773872136}
+  - component: {fileID: 54611319384908986}
   m_Layer: 0
-  m_Name: Ariel
+  m_Name: Green Beach Chair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4456708249728174
+--- !u!4 &4467178927100476
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1248101033579242}
+  m_GameObject: {fileID: 1928368657919078}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -26.239569, y: 39.03035, z: -65.3245}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23641414126360558
+--- !u!23 &23982836241454916
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1248101033579242}
+  m_GameObject: {fileID: 1928368657919078}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +58,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: dfb53032214382a4c833193fc8b14007, type: 2}
+  - {fileID: 2100000, guid: d801671e5b5654c4e842472df636d8c2, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,19 +78,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33550012325890534
+--- !u!33 &33315495075764820
 MeshFilter:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1248101033579242}
-  m_Mesh: {fileID: 4300000, guid: b482b3b5172d42345bbf452730e9c679, type: 3}
---- !u!54 &54465701477942784
+  m_GameObject: {fileID: 1928368657919078}
+  m_Mesh: {fileID: 4300000, guid: 70142fba264f26a469067554da71c9c4, type: 3}
+--- !u!54 &54611319384908986
 Rigidbody:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1248101033579242}
+  m_GameObject: {fileID: 1928368657919078}
   serializedVersion: 2
   m_Mass: 1
   m_Drag: 0
@@ -98,14 +98,14 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 0
   m_CollisionDetection: 0
---- !u!64 &64988981605872996
+--- !u!64 &64501787773872136
 MeshCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1248101033579242}
+  m_GameObject: {fileID: 1928368657919078}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
@@ -113,4 +113,4 @@ MeshCollider:
   m_Convex: 1
   m_CookingOptions: 14
   m_SkinWidth: 0.01
-  m_Mesh: {fileID: 4300000, guid: b482b3b5172d42345bbf452730e9c679, type: 3}
+  m_Mesh: {fileID: 4300000, guid: 70142fba264f26a469067554da71c9c4, type: 3}
