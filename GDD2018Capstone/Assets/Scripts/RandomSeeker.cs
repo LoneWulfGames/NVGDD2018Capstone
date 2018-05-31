@@ -6,7 +6,7 @@ public class RandomSeeker : MonoBehaviour
 {
     GameObject[] players;
 
-
+    
 
     private void Start()
     {
