@@ -33,7 +33,7 @@ public class CameraControlOther : MonoBehaviour
 
     public void ResetCam()
     {
-        //print("setting camera up!");    
+        print("setting camera up!");    
         transform.SetParent(mob.transform);
         //transform.position=(mob.transform.position+ Vector3.up);
         transform.position = mob.transform.position + offSetFromMob;

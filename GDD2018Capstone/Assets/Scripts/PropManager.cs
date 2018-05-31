@@ -30,6 +30,9 @@ public class PropManager : MonoBehaviour {
             if(Physics.Raycast(ray, out hit))
             {
                 print("hit: " + hit.transform.name);
+
+                //make an if statment to check if the hit is on another player and the player firing is a seeker
+                //then make the object disabled but keep the camera.
                 if (hit.transform.CompareTag("Prop"))
                 {
                     Swap(hit.transform.GetComponent<PropHolder>().propModel);

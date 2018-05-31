@@ -19,6 +19,7 @@ public class PlayersController : NetworkBehaviour
     public bool isSeeker = false;
     public bool isGrounded;
 
+
     public Vector3 jump;
     public Rigidbody rb;
     public Camera cam;
