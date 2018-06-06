@@ -6,6 +6,9 @@ public class PropManager : MonoBehaviour {
 
     public GameObject player;
     public GameObject clonePlayer;
+    public bool isHider;
+    public bool found;
+    
 
 	public void Swap(GameObject prop) {
         if (player.activeInHierarchy)
@@ -29,15 +32,42 @@ public class PropManager : MonoBehaviour {
             RaycastHit hit;
             if(Physics.Raycast(ray, out hit))
             {
-                print("hit: " + hit.transform.name);
+               if(hit.transform.CompareTag("Prop") && isHider == true)
+                {
+                    Swap(hit.transform.GetComponent<PropHolder>().propModel);
+                }
 
-                //make an if statment to check if the hit is on another player and the player firing is a seeker
-                //then make the object disabled but keep the camera.
+               if(hit.transform.CompareTag("Prop") && isHider == false)
+                {
+                    if (hit.transform.GetComponent<PropManager>().isHider == true)
+                    {
+                        hit.transform.GetComponent<PropManager>().IsFound();
+                    }
+                }
+
+                
                 if (hit.transform.CompareTag("Prop"))
                 {
                     Swap(hit.transform.GetComponent<PropHolder>().propModel);
                 }
             }
         }
+    }
+
+    void IsFound()
+    {
+        found = true;
+        Destroy(clonePlayer);
+
+    }
+
+    public void SetHider()
+    {
+        isHider = true;
+    }
+
+    public void SetSeeker()
+    {
+        isHider = false;
     }
 }
