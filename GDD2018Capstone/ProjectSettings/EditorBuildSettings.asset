@@ -5,16 +5,16 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Network Lobby.unity
     guid: edf6de2096af7944180e05df5ec7e50a
   - enabled: 0
     path: Assets/Scenes/Zach.unity
     guid: f8ec38de7241b6d4eb449eab0e255d7f
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Tony.unity
     guid: 4cdbc0b886d70db439ef22d79901896d
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Zach Lowpoly.unity
     guid: 4198e2de9fe93c54995c335d566a2204
   m_configObjects: {}

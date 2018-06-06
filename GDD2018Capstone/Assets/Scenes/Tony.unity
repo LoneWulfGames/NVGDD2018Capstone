@@ -232,20 +232,7 @@ Prefab:
       propertyPath: m_RootOrder
       value: 4
       objectReference: {fileID: 0}
-    - target: {fileID: 1176918372257072, guid: 9deba58249f904e47a1b784ddef62004, type: 2}
-      propertyPath: m_TagString
-      value: MainCamera
-      objectReference: {fileID: 0}
-    - target: {fileID: 1176918372257072, guid: 9deba58249f904e47a1b784ddef62004, type: 2}
-      propertyPath: m_Name
-      value: Main Camera
-      objectReference: {fileID: 0}
-    - target: {fileID: 1176918372257072, guid: 9deba58249f904e47a1b784ddef62004, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 114859383871447390, guid: 9deba58249f904e47a1b784ddef62004, type: 2}
+    m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9deba58249f904e47a1b784ddef62004, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &541680171
@@ -341,29 +328,6 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7128b05abfab4504b8b0a80e7b0c7f79, type: 2}
   m_IsPrefabParent: 0
---- !u!1 &624807003 stripped
-GameObject:
-  m_PrefabParentObject: {fileID: 1176918372257072, guid: 9deba58249f904e47a1b784ddef62004,
-    type: 2}
-  m_PrefabInternal: {fileID: 429367858}
---- !u!114 &624807004
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 624807003}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fc5502050d60a194eaf738aa7f4ec1ab, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseLook: {x: 0, y: 0}
-  sensitivity: 5
-  smoothing: 2
-  mob: {fileID: 0}
-  offSetFromMob: {x: 5, y: 3.5, z: -2}
-  tiltMin: -75
-  tiltMax: 60
 --- !u!1 &899601402
 GameObject:
   m_ObjectHideFlags: 0
@@ -629,7 +593,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeLeft: 5
-  isSeeker: 0
   timerText: {fileID: 1050336762}
 --- !u!1 &1064466214
 GameObject:

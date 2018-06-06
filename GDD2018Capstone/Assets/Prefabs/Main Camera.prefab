@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 20502438133172124}
   - component: {fileID: 124580600970994392}
   - component: {fileID: 81196086991270340}
-  - component: {fileID: 114859383871447390}
+  - component: {fileID: 114697231913715502}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -86,7 +86,7 @@ AudioListener:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1176918372257072}
   m_Enabled: 1
---- !u!114 &114859383871447390
+--- !u!114 &114697231913715502
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -101,9 +101,9 @@ MonoBehaviour:
   sensitivity: 5
   smoothing: 2
   mob: {fileID: 0}
-  offSetFromMob: {x: 0, y: 0.6, z: 0}
+  offSetFromMob: {x: 5, y: 3.5, z: -2}
   tiltMin: -75
-  tiltMax: 65
+  tiltMax: 60
 --- !u!124 &124580600970994392
 Behaviour:
   m_ObjectHideFlags: 1
